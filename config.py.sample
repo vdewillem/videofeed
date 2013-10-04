@@ -1,0 +1,4 @@
+pocket = dict (
+	consumer_key = "<consumer key>",
+	access_token = "<access_token>"
+)
