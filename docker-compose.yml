@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  videofeed:
+    build: .
+    volumes:
+      - ./data:/root
+    environment:
+      - CONSUMER_KEY=
+      - ACCESS_TOKEN=
+      - URL=http://localhost:8080/
+    restart: unles-stopped
+
+  webserver:
+    image: nimmis/alpine-apache
+    ports:
+      - 8080:80
+    volumes:
+      - ./data:/web/html

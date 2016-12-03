@@ -1,4 +1,4 @@
 *.mp4
 *.part
-pocket-videos.xml
-kibana
+data
+.idea
